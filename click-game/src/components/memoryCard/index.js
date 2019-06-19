@@ -1,12 +1,14 @@
 import React from "react";
 import "./style.css";
 
-const MemoryCard = (props) => {
+const MemoryCard = props => {
   return (
     <div className="card">
-      <div className="card-img card-body">
-        <img alt={props.name} src={props.image} height="300" />
-      </div>
+      <span >
+        <div className="card-img card-body">
+          <img alt={props.name} src={props.image} height="300"  onClick={() => props.cardClick(props.id)}/>
+        </div>
+      </span>
     </div>
   );
 };
