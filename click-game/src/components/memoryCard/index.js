@@ -14,7 +14,7 @@ const MemoryCard = props => {
     <div className="card" style={props.wrong === true ? stylesWrong : stylesRight}>
       <span >
         <div className="card-img card-body">
-          <img alt={props.name} src={props.image} height="200"  onClick={() => { props.cardClick(props.id)}}/>
+          <img alt={props.name} src={props.image} height="160" className="image" onClick={() => { props.cardClick(props.id)}}/>
         </div>
       </span>
     </div>
